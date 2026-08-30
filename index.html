@@ -154,7 +154,45 @@ nav {
     gap: 15px;
     flex-wrap: wrap;
 }
+/* ===== HERO PROFILE IMAGE ===== */
 
+.hero-content {
+    max-width: 1100px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 60px;
+
+    text-align: left;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 0 0 280px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
 
 /* ===== BUTTONS ===== */
 
@@ -570,24 +608,28 @@ footer {
     }
 }
     
-/* =========================
-   HERO PROFILE IMAGE
-========================= */
+
+/* ===== HERO WITH PROFILE PHOTO ===== */
 
 .hero-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    gap: 60px;
+    text-align: left;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 650px;
 }
 
 .hero-image {
+    flex: 0 0 280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 0 auto 30px auto;
 }
 
 .hero-image img {
@@ -596,7 +638,8 @@ footer {
     object-fit: cover;
     border-radius: 50%;
     display: block;
-}   
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
 </style>
 
 </head>
@@ -677,13 +720,11 @@ footer {
 
             <div class="hero-buttons">
 
-                <a href="#projects"
-                   class="btn btn-primary">
+                <a href="#projects" class="btn btn-primary">
                     View My Projects
                 </a>
 
-                <a href="#contact"
-                   class="btn btn-outline">
+                <a href="#contact" class="btn btn-outline">
                     Contact Me
                 </a>
 
@@ -692,16 +733,12 @@ footer {
         </div>
 
         <div class="hero-image">
-
-            <img src="profile.jpeg"
-                 alt="K. Nidhish - Aspiring Software Engineer">
-
+            <img src="profile.jpeg" alt="K. Nidhish - Aspiring Software Engineer">
         </div>
 
     </div>
 
-</section>    
-
+</section>
     
 <!-- =========================
      ABOUT
