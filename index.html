@@ -278,7 +278,10 @@ section {
         repeat(auto-fit, minmax(180px, 1fr));
 
     gap: 18px;
-}
+
+    max-width: 1000px;
+    margin: 0 auto;
+}   
 
 .skill {
     background: #111827;
@@ -601,26 +604,32 @@ footer {
 ========================= */
 
 @media (max-width: 768px) {
-
+    /* Center the profile photo */
     .hero-content {
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-align: center;
     }
 
     .hero-image {
-        flex: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px auto;
     }
 
     .hero-image img {
-        width: 220px;
-        height: 270px;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
 }
+}
+        
 </style>
 
 </head>
