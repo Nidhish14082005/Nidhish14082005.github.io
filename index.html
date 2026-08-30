@@ -271,21 +271,24 @@ section {
 
 /* ===== SKILLS ===== */
 
-.skills-grid {
+#skills {
+    text-align: center;
+}
+
+.skills-container {
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 18px;
 
     width: 100%;
     max-width: 1000px;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto 0;
 }
 
-.skill {
+.skill-card {
     background: #111827;
 
     border: 1px solid #1e293b;
@@ -299,21 +302,20 @@ section {
     transition: 0.3s;
 }
 
-.skill:hover {
+.skill-card:hover {
     transform: translateY(-5px);
     border-color: #38bdf8;
 }
 
-.skill h3 {
+.skill-card h3 {
     color: #e2e8f0;
     margin-bottom: 5px;
 }
 
-.skill p {
+.skill-card p {
     color: #64748b;
     font-size: 14px;
 }
-
 /* ===== PROJECTS ===== */
 
 .projects-grid {
@@ -534,6 +536,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
+    
+    .skills-container {
+    grid-template-columns: repeat(2, 1fr);    
+    }
 }
 
 
@@ -572,6 +578,9 @@ footer {
     .contact-links {
         flex-direction: column;
         width: 100%;
+    }
+    .skills-container {
+    grid-template-columns: 1fr;
     }
 }
     
