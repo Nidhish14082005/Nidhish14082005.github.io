@@ -269,6 +269,7 @@ section {
 }
 
 
+
 /* ===== SKILLS ===== */
 
 .skills-grid {
@@ -280,8 +281,9 @@ section {
     gap: 18px;
 
     max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
-}   
+}
 
 .skill {
     background: #111827;
@@ -311,7 +313,6 @@ section {
     color: #64748b;
     font-size: 14px;
 }
-
 
 /* ===== PROJECTS ===== */
 
@@ -568,68 +569,34 @@ footer {
         width: 100%;
     }
 }
+    
 /* =========================
    HERO PROFILE IMAGE
 ========================= */
 
 .hero-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-.hero-text {
-    flex: 1;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-image {
-    flex: 0 0 320px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin: 0 auto 30px auto;
 }
 
 .hero-image img {
-    width: 300px;
-    height: 360px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
-    border-radius: 18px;
-    border: 3px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-}
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
-
-@media (max-width: 768px) {
-    /* Center the profile photo */
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .hero-image {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto 30px auto;
-    }
-
-    .hero-image img {
-        width: 280px;
-        height: 280px;
-        object-fit: cover;
-        border-radius: 50%;
-        display: block;
-}
-}
-        
+    border-radius: 50%;
+    display: block;
+}   
 </style>
 
 </head>
