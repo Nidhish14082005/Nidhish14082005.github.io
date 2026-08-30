@@ -458,6 +458,22 @@ section {
 
     margin-bottom: 25px;
 }
+.resume-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
 
 
 /* ===== CONTACT ===== */
@@ -1109,12 +1125,13 @@ footer {
             For now, leave this link as it is.
             -->
 
-            <a href="resume.pdf"
-               target="_blank"
-               class="btn btn-primary">
-
+           
+            <a href="resume.pdf" target="_blank" class="resume-btn">
                 View Resume
+            </a>
 
+            <a href="resume.pdf" download class="resume-btn">
+                Download Resume
             </a>
 
         </div>
