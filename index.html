@@ -565,7 +565,62 @@ footer {
         width: 100%;
     }
 }
+/* =========================
+   HERO PROFILE IMAGE
+========================= */
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 0 0 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-image {
+        flex: none;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 270px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+}
 </style>
 
 </head>
@@ -628,31 +683,42 @@ footer {
 
     <div class="hero-content">
 
-        <h1>
-            Hi, I'm <span>K. Nidhish</span>
-        </h1>
+        <div class="hero-text">
 
-        <h2>
-            Aspiring Software Engineer | AI/ML & Full-Stack Developer
-        </h2>
+            <h1>
+                Hi, I'm <span>K. Nidhish</span>
+            </h1>
 
-        <p>
-            Computer Science and Engineering student at IFET College of Engineering,
-            passionate about software development, artificial intelligence,
-            machine learning, and building practical technology solutions.
-        </p>
+            <h2>
+                Aspiring Software Engineer | AI/ML & Full-Stack Developer
+            </h2>
 
-        <div class="hero-buttons">
+            <p>
+                Computer Science and Engineering student at IFET College of Engineering,
+                passionate about software development, artificial intelligence,
+                machine learning, and building practical technology solutions.
+            </p>
 
-            <a href="#projects"
-               class="btn btn-primary">
-                View My Projects
-            </a>
+            <div class="hero-buttons">
 
-            <a href="#contact"
-               class="btn btn-outline">
-                Contact Me
-            </a>
+                <a href="#projects"
+                   class="btn btn-primary">
+                    View My Projects
+                </a>
+
+                <a href="#contact"
+                   class="btn btn-outline">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="profile.jpeg"
+                 alt="K. Nidhish - Aspiring Software Engineer">
 
         </div>
 
@@ -660,6 +726,7 @@ footer {
 
 </section>    
 
+    
 <!-- =========================
      ABOUT
 ========================= -->
