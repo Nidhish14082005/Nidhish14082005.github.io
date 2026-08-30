@@ -532,14 +532,30 @@ footer {
         padding: 80px 0;
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .hero-content {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-text {
         width: 100%;
     }
-    
-    .skills-container {
-    grid-template-columns: repeat(2, 1fr);    
+
+    .hero-image {
+        order: -1;
+        flex: none;
     }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 }
 
 
